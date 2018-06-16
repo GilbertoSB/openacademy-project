@@ -4,12 +4,6 @@
 
     'summary': """Manage trainings""",
 
-    'description': """
-        Open Academy module for managing trainings:
-            - training courses
-            - training sessions
-            - attendees registration
-    """,
 
     'author': "O-SIAT",
     'website': "http://www.o-sait.com",
