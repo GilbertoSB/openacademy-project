@@ -24,8 +24,9 @@
     ],
     # only loaded in demonstration mode
     'demo': [
-        'demo.xml',
+        '/opt/odoo/my-modules/openacademy/demo/openacademy_course_demo.xml',
     ],
     'installable':True,
+    'auto_install':False,
 }
 
