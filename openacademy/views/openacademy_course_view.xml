@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <data>
-        <!-- Registro para la cracion del vista formulario-->
+        <!-- Registro para la creación de la vista formulario-->
         <record model="ir.ui.view" id="course_form_view">
             <field name="name">course.form</field>
             <field name="model">openacademy.course</field>
@@ -10,10 +10,42 @@
                     <sheet>
                         <group>
                             <field name="name"/>
-                            <field name="description"/>
                         </group>
+                        <notebook>
+                            <page string="Description">
+                                <field name="description"/>
+                            </page>
+                            <page string="About">
+                                This is an example of notebooks
+                            </page>
+                        </notebook>
                     </sheet>
                 </form>
+            </field>
+        </record>
+
+        <!-- Resigtro para la creación de la vista de búsqueda -->
+        <record model="ir.ui.view" id="course_search_view">
+            <field name="name">course.search</field>
+            <field name="model">openacademy.course</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name"/>
+                    <field name="description"/>
+                </search>
+            </field>
+        </record>
+
+        <!-- Registro para la creación de la vista tree-->
+        <record model="ir.ui.view" id="course_tree_view">
+            <field name="name">course.tree</field>
+            <field name="model">openacademy.course</field>
+            <field name="arch" type="xml">
+                <tree string="Course list">
+                    <field name="name"/>
+                    <field name="create_date"/>
+                    <field name="id"/>
+                </tree>            
             </field>
         </record>
 
