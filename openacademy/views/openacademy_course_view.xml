@@ -10,6 +10,7 @@
                     <sheet>
                         <group>
                             <field name="name"/>
+                            <field name="create_date"/>
                         </group>
                         <notebook>
                             <page string="Description">
@@ -32,6 +33,7 @@
                 <search>
                     <field name="name"/>
                     <field name="description"/>
+                    <field name="id"/>
                 </search>
             </field>
         </record>
@@ -44,7 +46,6 @@
                 <tree string="Course list">
                     <field name="name"/>
                     <field name="create_date"/>
-                    <field name="id"/>
                 </tree>            
             </field>
         </record>
