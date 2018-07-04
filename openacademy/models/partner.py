@@ -10,3 +10,6 @@ class Partner(models.Model):
 
     session_ids = fields.Many2many('openacademy.session',
         string="Attended Sessions", readonly=True)
+
+    instructor_ids = fields.One2many('openacademy.session','instructor_id',
+                    string="Instructor Sessions")
