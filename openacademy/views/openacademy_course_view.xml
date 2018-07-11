@@ -11,6 +11,7 @@
                         <group>
                             <field name="name"/>
                             <field name="responsible_id"/>
+                            <field name="active"/>
                         </group>
                         <notebook>
                             <page string="Description">
@@ -55,6 +56,7 @@
                     <field name="name"/>
                     <field name="responsible_id"/>
                     <field name="create_date"/>
+                    <field name="active"/>
                 </tree>            
             </field>
         </record>

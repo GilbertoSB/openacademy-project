@@ -18,3 +18,4 @@ class Course(models.Model):
     session_ids = fields.One2many('openacademy.session',
                         'course_id', 
                         string='Sessions')
+    active=fields.Boolean(default=True)
