@@ -33,6 +33,26 @@ class Session(models.Model):
                                     compute='_get_attendees_count', store=True)
     color = fields.Integer()
     active = fields.Boolean(default=True)
+    state = fields.Selection([
+            ('draft', "Draft"),
+            ('confirmed', "Confirmed"),
+            ('done', "Done"),
+            ], default='draft')
+
+    @api.multi
+    def action_draft(self):
+        self.write({'state': 'draft',})
+        #self.state = 'draft'
+
+    @api.multi
+    def action_confirm(self):
+        self.write({'state': 'confirmed',})
+        #self.state = 'confirmed'
+
+    @api.multi
+    def action_done(self):
+        self.write({'state': 'done',})
+        #self.state = 'done'
 
     # @api.one
     @api.depends('seats','attendee_ids')

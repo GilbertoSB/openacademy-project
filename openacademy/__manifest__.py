@@ -19,11 +19,12 @@
 
     # always loaded
     'data': [
+        'security/security.xml',
+        'security/ir.model.access.csv',
         'views/openacademy_course_view.xml',
         'views/openacademy_session_view.xml',
         'views/partner_view.xml',
-        # 'security/ir.model.access.csv',
-        # 'templates.xml',
+        'views/openacademy_wizard_view.xml'
     ],
     # only loaded in demonstration mode
     'demo': [
