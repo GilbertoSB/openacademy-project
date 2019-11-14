@@ -1,4 +1,4 @@
-Open Academy module for managing trainings:
+OpenAcademy modules for managing trainings:
 
 	- training courses
 	- training sessions
